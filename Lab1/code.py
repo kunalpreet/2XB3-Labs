@@ -1,20 +1,18 @@
 
 
-def are_valid_groups(student_nos, groups):
-    for student in student_nos:
-        Answer = 0
-        for group in groups:
-            if student in group:
-                Answer += 1
-            
-        if Answer != 1:
-            return False
+def are_valid_groups(studentNums, groups):
+    a = len(studentNums)
+    for i in studentNums:
+        count = 0
+        for j in groups:
+            if i in j:
+                count = count + 1
 
-    return True
-
-
+    if count == a:
+        return True
+    return False
 
 a = [1, 2, 3, 4, 5]
-b = [[1, 2], [3, 4], [5, 1]]
+b = [[1, 2], [3, 4], [1]]
 print(are_valid_groups(a, b))
-
+                
