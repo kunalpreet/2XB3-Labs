@@ -3,6 +3,7 @@
 def are_valid_groups(student_nos, groups):
     for student in student_nos:
         count = 0
+        
         for group in groups:
             count2=0
             for x in group:
