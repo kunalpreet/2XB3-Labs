@@ -12,4 +12,6 @@ def are_valid_groups(student_nos, groups):
 
     return True
 
-                
+a = [1,2,3,4,5]
+b = [[1,2], [3,4], [5]]
+print(are_valid_groups(a,b))                
